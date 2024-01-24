@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="movie-container">
+        <h1>Movie Tickets Booking Website</h1>
+        <center><label>Pick a movie:</label>
+        <select id="movie">
+            <option value="650">Salaar (₹500)</option>
+            <option value="850">Hanu Man (₹700)</option>
+            <option value="550">Adhipurush (₹550)</option>
+            <option value="750">Bahubali (₹750)</option>
+        </select></center>
+    </div>
+
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="movie-screen">
+            <img src='screen.png' alt='screen' />
+        </div>
+
+        <div class="row-container">
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <h5 class='subtitle'>1ST CLASS - ₹650</h5>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+            </div>
+            <h5 class='subtitle'>PREMIUM - ₹850</h5>
+
+            <div class="text-wrapper">
+                <p class="text">Selected Seats <span id='count'>0</span>
+                    <p class="text">Total Price ₹<span id="total">0</span></p>
+                    <center><button onclick="Booking"><h4>Book Now</h4></button></center>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <div class="text-wrapper">
+        <p class="text">Selected Seats <span id='count'>0</span>
+            <p class="text">Total Price ₹<span id="total">0</span></p>
+    </div> -->
+
+    <script src='script.js'></script>
+</body>
+
+</html>
